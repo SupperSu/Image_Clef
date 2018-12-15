@@ -1,0 +1,32 @@
+/home/ubuntu/anaconda3/envs/pytorch0.4_py27/lib/python2.7/site-packages/matplotlib/__init__.py:1067: UserWarning: Duplicate key in file "/home/ubuntu/.config/matplotlib/matplotlibrc", line #2
+  (fname, cnt))
+/home/ubuntu/anaconda3/envs/pytorch0.4_py27/lib/python2.7/site-packages/matplotlib/__init__.py:1067: UserWarning: Duplicate key in file "/home/ubuntu/.config/matplotlib/matplotlibrc", line #3
+  (fname, cnt))
+/home/ubuntu/yupeng/CLEF_Updated/utils/CLEF.py:26: FutureWarning: set_value is deprecated and will be removed in a future release. Please use .at[] or .iat[] accessors instead
+  self.clef.set_value(i, 'caption', caption.lower())
+Namespace(batch_size=10, cap_con_train='./CaptionConceptTraining.csv', cap_con_valid='./CaptionConceptValidation.csv', image_root='/data/CaptionTraining2018', lr=0.001, num_concepts=111156, num_epochs=20, num_workers=1, shuffle=False, vocab_concept='./data/concept_voc.pkl', vocab_word_path='./utils/vocab.pkl')
+use gpu!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+The number of captions before deletion: 199489
+The number of captions after deletion: 199489
+train_mil.py:26: UserWarning: invalid index of a 0-dim tensor. This will be an error in PyTorch 0.5. Use tensor.item() to convert a 0-dim tensor to a Python number
+  total_step, loss.data[0],
+train_mil.py:27: UserWarning: invalid index of a 0-dim tensor. This will be an error in PyTorch 0.5. Use tensor.item() to convert a 0-dim tensor to a Python number
+  np.exp(loss.data[0])
+Epoch [0/20]: [0/19949], loss: 0.6955, perplexity: 2.0047
+Epoch [0/20]: [1000/19949], loss: 0.0097, perplexity: 1.0097
+Epoch [0/20]: [2000/19949], loss: 0.0108, perplexity: 1.0108
+Epoch [0/20]: [3000/19949], loss: 0.0064, perplexity: 1.0064
+Traceback (most recent call last):
+  File "train_mil.py", line 95, in <module>
+    main(args)
+  File "train_mil.py", line 68, in main
+    train(train_data, md, optimizer, criterion, ep, epoch)
+  File "train_mil.py", line 13, in train
+    for i, (images, concepts) in enumerate(data_loader):
+  File "/home/ubuntu/anaconda3/envs/pytorch0.4_py27/lib/python2.7/site-packages/torch/utils/data/dataloader.py", line 264, in __next__
+    batch = self.collate_fn([self.dataset[i] for i in indices])
+  File "/home/ubuntu/yupeng/CLEF_Updated/utils/data_loader_concept.py", line 36, in __getitem__
+    image = Image.open(os.path.join(self.root, path)).convert('RGB')
+  File "/home/ubuntu/anaconda3/envs/pytorch0.4_py27/lib/python2.7/site-packages/PIL/Image.py", line 2548, in open
+    fp = builtins.open(filename, "rb")
+IOError: [Errno 2] No such file or directory: '/data/CaptionTraining2018/3001005.jpg'
