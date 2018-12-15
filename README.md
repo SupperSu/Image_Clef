@@ -1,5 +1,6 @@
 # Model for Image CLEF competition.
-Bsed on Residual-Net101 and LSTM
+Model is based on Residual-Net101 and LSTM medical image caption, get bleu score 0.20, trained on 222,000 images on amazon ec2.  
+TODO: refactor codes, and redesign attention module to use medical concepts.
 ## sample output
 ![](/brain.jpg)  
 **prediction:** ct scan showing a large retroperitoneal hematoma with associated left hydronephrosis  
