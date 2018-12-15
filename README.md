@@ -8,3 +8,5 @@ TODO: refactor codes, and redesign attention module to use medical concepts.
 ![](/blood.jpg)  
 **prediction:** photomicrograph of the resected specimen showing a well encapsulated tumor with a thin wall of fibrous tissue hematoxylin and eosin.  
 **ground truth:** liver section of female test rat treated with aqueous extract of p guajava leaves cords of hepatocytes are distinct and relatively normal no fatty change cytoplasm not vacuolated haematoxylin and eosin stained.  
+## report
+[UMass at ImageCLEF Caption Prediction 2018 Task](http://ceur-ws.org/Vol-2125/paper_155.pdf)
